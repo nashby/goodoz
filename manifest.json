@@ -1,0 +1,16 @@
+{
+  "version": "0.1",
+  "manifest_version": 2,
+  "name": "GoodOz",
+  "description": "Goodreads.com rating for oz.by",
+
+  "permissions": [
+    "https://www.goodreads.com/"
+  ],
+
+  "content_scripts": [ {
+    "js":      [ "goodoz.js" ],
+    "matches": [ "http://oz.by/*" ],
+    "run_at":  "document_idle"
+  } ]
+}
